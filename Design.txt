@@ -1,0 +1,18 @@
+Design Overview
+
+1. The Captioner
+TKinter or PySimpleGUI interface for user to select a directory full of images. 
+Images are sequentially displayed and a text box is provided for user to input caption.
+Image paths and captions are stored in csv or json and this data is stored in the selected image directory.
+
+- Optional: add category section, save metadata in program folder with aboslute image paths, then build LaTeX based on categories
+
+2. The Document Builder
+LaTeX based.
+Tkinter or PySimpleGUI interface.
+User selects directory or single or multiple images.
+Program searches the directory, or parent directory of selected images for metadata/caption file (csv or json).
+Using the caption info, build a LaTeX document of images
+Add option to automatically build to pdf with captions at end of process [default].
+
+
