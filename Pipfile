@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 pillow = "*"
+pylatex = "*"
 
 [dev-packages]
 
