@@ -150,11 +150,13 @@ class ImageCaptioner(tk.Tk):
             if img.mode in ("RGBA", "P"):
                 img = img.convert("RGB")
             img.thumbnail(imagemax)
+            if not path.isdir('./tempfiles'):
+                mkdir('./tempfiles')
             temppath = "./tempfiles/tempthumb.jpeg"
             try:
                 img.save(temppath)
             except:
-                # mkdir('./tempfiles')
+                mkdir('./tempfiles')
                 img.save(temppath)
 
         # delete old image
