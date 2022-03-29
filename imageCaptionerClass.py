@@ -182,7 +182,7 @@ class ImageCaptioner(tk.Tk):
         self.caption.delete(0, "end")  # clears the input widget
 
         # increment the image counter and then do the next image
-        if self.imageIncrementer >= self.numberImages-1:
+        if self.imageIncrementer > self.numberImages-1:
             
             # delete old image
             for label in self.imgframe.winfo_children():
